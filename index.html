@@ -856,12 +856,22 @@
         <button class="suggestion-chip">Où est située l'auto-école ?</button>
       </div>
 
-      <!-- Input Bar -->
+      <!-- Input Bar with Voice Microphone -->
       <div class="ai-input-bar">
-        <input type="text" id="aiChatInput" placeholder="Pose ta question ici (ex: 'Est-ce que le CPF marche ?')...">
+        <button class="btn-mic" id="btnAiMic" title="Parler à l'assistante vocale (Microphone)" aria-label="Activer le micro">
+          <span class="mic-icon">🎙️</span>
+          <span class="mic-label">Parler</span>
+        </button>
+        <input type="text" id="aiChatInput" placeholder="Parle au micro ou écris ta question ici (ex: 'Comment financer sans CDI ?')...">
         <button class="btn-primary" id="btnAiSend" style="padding: 10px 18px;">
           Envoyer
         </button>
+      </div>
+
+      <!-- Live Voice Listening Status Banner -->
+      <div id="micListeningBanner" style="display: none; padding: 8px 16px; background: rgba(239, 68, 68, 0.18); border-top: 1px solid rgba(239,68,68,0.4); color: #fca5a5; font-size: 0.82rem; font-weight: 700; align-items: center; gap: 8px;">
+        <span class="pulse-dot"></span>
+        <span>🎙️ L'assistante Car 18 vous écoute... Parlez distinctement dans votre micro !</span>
       </div>
     </div>
   </section>

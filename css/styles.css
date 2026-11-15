@@ -1143,6 +1143,43 @@ html {
   display: flex;
   gap: 10px;
   background: #09121d;
+  align-items: center;
+}
+
+.btn-mic {
+  background: #1e293b;
+  border: 1px solid #3b82f6;
+  color: #38bdf8;
+  padding: 10px 14px;
+  border-radius: 8px;
+  font-weight: 700;
+  font-size: 0.88rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  cursor: pointer;
+  transition: all 0.25s ease;
+  white-space: nowrap;
+}
+
+.btn-mic:hover {
+  background: rgba(59, 130, 246, 0.2);
+  border-color: #60a5fa;
+  transform: translateY(-1px);
+}
+
+.btn-mic.listening {
+  background: #ef4444;
+  border-color: #f87171;
+  color: #ffffff;
+  box-shadow: 0 0 20px rgba(239, 68, 68, 0.6);
+  animation: micPulse 1.2s infinite;
+}
+
+@keyframes micPulse {
+  0% { transform: scale(1); box-shadow: 0 0 10px rgba(239, 68, 68, 0.5); }
+  50% { transform: scale(1.05); box-shadow: 0 0 25px rgba(239, 68, 68, 0.9); }
+  100% { transform: scale(1); box-shadow: 0 0 10px rgba(239, 68, 68, 0.5); }
 }
 
 .ai-input-bar input {
