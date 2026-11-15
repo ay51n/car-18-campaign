@@ -1,0 +1,120 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 280" width="100%" height="100%">
+  <defs>
+    <linearGradient id="tastyBoxGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" />
+      <stop offset="60%" stop-color="#fff1f2" />
+      <stop offset="100%" stop-color="#fecdd3" />
+    </linearGradient>
+    <linearGradient id="chickenGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fef08a" />
+      <stop offset="40%" stop-color="#f59e0b" />
+      <stop offset="100%" stop-color="#b45309" />
+    </linearGradient>
+    <linearGradient id="sauceGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#fff1f2" />
+      <stop offset="50%" stop-color="#f43f5e" />
+      <stop offset="100%" stop-color="#e11d48" />
+    </linearGradient>
+    <filter id="foodGlow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="2" dy="5" stdDeviation="4" flood-color="#020617" flood-opacity="0.35" />
+    </filter>
+  </defs>
+
+  <!-- SHADOW -->
+  <ellipse cx="210" cy="245" rx="170" ry="22" fill="#020617" opacity="0.45" />
+
+  <!-- STEAM VAPOR TRAILS -->
+  <g stroke="#ffffff" stroke-width="2.5" fill="none" opacity="0.6" stroke-linecap="round">
+    <path d="M 150 70 Q 140 50 155 35 Q 170 20 160 5" />
+    <path d="M 210 65 Q 225 45 215 30 Q 200 15 215 0" />
+    <path d="M 270 72 Q 285 52 270 38 Q 255 22 268 8" />
+  </g>
+
+  <!-- STEAMING HOT VIBE RAYS -->
+  <g stroke="#f43f5e" stroke-width="3" stroke-linecap="round">
+    <line x1="60" y1="95" x2="40" y2="90" />
+    <line x1="65" y1="110" x2="45" y2="115" />
+    <line x1="360" y1="95" x2="380" y2="90" />
+    <line x1="355" y1="110" x2="375" y2="115" />
+  </g>
+
+  <!-- CRISPY CHICKEN TENDERS & RICE PILE -->
+  <g filter="url(#foodGlow)">
+    <!-- Base bed of fragrant rice / seasoned golden fries -->
+    <ellipse cx="210" cy="130" rx="145" ry="40" fill="#fef3c7" />
+    <ellipse cx="210" cy="125" rx="140" ry="35" fill="#fde68a" />
+    
+    <!-- Fried chicken bites mounds -->
+    <!-- Center chunk -->
+    <path d="M 170 120 Q 210 80 250 120 Q 260 135 240 145 Q 180 148 170 120 Z" fill="url(#chickenGrad)" />
+    <!-- Left chunk -->
+    <path d="M 115 130 Q 145 90 185 115 Q 190 140 150 145 Q 110 145 115 130 Z" fill="url(#chickenGrad)" />
+    <!-- Right chunk -->
+    <path d="M 235 115 Q 275 88 305 125 Q 310 145 270 145 Q 230 140 235 115 Z" fill="url(#chickenGrad)" />
+    <!-- Top crispy morsels -->
+    <circle cx="165" cy="100" r="18" fill="url(#chickenGrad)" />
+    <circle cx="210" cy="90" r="22" fill="url(#chickenGrad)" />
+    <circle cx="255" cy="98" r="19" fill="url(#chickenGrad)" />
+    <circle cx="288" cy="118" r="16" fill="url(#chickenGrad)" />
+    <circle cx="132" cy="115" r="16" fill="url(#chickenGrad)" />
+
+    <!-- Crispy flakes & crunchy textures -->
+    <g fill="#92400e" opacity="0.7">
+      <circle cx="155" cy="96" r="2.5" />
+      <circle cx="205" cy="85" r="3" />
+      <circle cx="225" cy="92" r="2" />
+      <circle cx="265" cy="95" r="2.5" />
+      <circle cx="180" cy="115" r="3" />
+      <circle cx="240" cy="120" r="2.5" />
+      <circle cx="285" cy="112" r="2" />
+    </g>
+
+    <!-- CREAMY SAUCE DRIZZLE (Spicy Mayo & White Garlic Sauce) -->
+    <!-- White sauce zig-zag -->
+    <path d="M 120 125 Q 150 100 170 120 T 215 105 T 260 115 T 300 125" fill="none" stroke="#ffffff" stroke-width="6" stroke-linecap="round" opacity="0.9" />
+    <!-- Pink spicy dynamite drizzle -->
+    <path d="M 125 132 Q 160 110 185 130 T 235 115 T 275 128 T 295 135" fill="none" stroke="url(#sauceGrad)" stroke-width="4.5" stroke-linecap="round" />
+
+    <!-- CHOPPED SCALLIONS / FRESH HERBS SPRINKLES (Green accents) -->
+    <g fill="#16a34a">
+      <rect x="175" y="95" width="4" height="4" rx="1" transform="rotate(25 175 95)" />
+      <rect x="205" y="80" width="5" height="4" rx="1" transform="rotate(45 205 80)" />
+      <rect x="235" y="90" width="4" height="5" rx="1" transform="rotate(15 235 90)" />
+      <rect x="260" y="105" width="4" height="4" rx="1" transform="rotate(60 260 105)" />
+      <rect x="150" y="110" width="5" height="4" rx="1" transform="rotate(30 150 110)" />
+      <rect x="220" y="112" width="4" height="4" rx="1" transform="rotate(80 220 112)" />
+      <rect x="280" y="118" width="5" height="4" rx="1" transform="rotate(40 280 118)" />
+    </g>
+
+    <!-- TASTY CROUSTY PRESENTATION BOX / TRAY -->
+    <!-- Front Face -->
+    <polygon points="65,140 355,140 330,225 90,225" fill="url(#tastyBoxGrad)" stroke="#fda4af" stroke-width="2" />
+    
+    <!-- Top Rim of Bowl / Box -->
+    <ellipse cx="210" cy="140" rx="145" ry="14" fill="#fff1f2" stroke="#fb7185" stroke-width="2" />
+
+    <!-- Tropical Palm Leaf Motif on Box (Pink print) -->
+    <g fill="#f43f5e" opacity="0.75" transform="translate(100, 160) scale(0.6)">
+      <!-- Palm fronds print -->
+      <path d="M 0 35 Q 20 10 45 0 Q 35 15 40 30 Q 25 18 20 35 Q 12 25 0 35 Z" />
+      <path d="M 12 40 Q 30 25 55 20 Q 42 32 45 45 Q 32 35 25 50 Q 20 42 12 40 Z" />
+    </g>
+
+    <!-- Tasty Crousty Logo on Front Box -->
+    <g transform="translate(160, 168) scale(0.65)">
+      <!-- Tasty text in script pink -->
+      <text x="0" y="24" font-family="'Pacifico', 'Brush Script MT', cursive, sans-serif" font-weight="900" font-size="28" fill="#e11d48">
+        Tasty
+      </text>
+      <!-- CROUSTY bold -->
+      <text x="56" y="24" font-family="'Impact', sans-serif" font-weight="900" font-size="24" fill="#0f172a" letter-spacing="1">
+        CROUSTY
+      </text>
+      <rect x="5" y="32" width="165" height="4" rx="2" fill="#f43f5e" />
+    </g>
+
+    <!-- Box Side Shading -->
+    <polygon points="355,140 330,225 338,225 365,140" fill="#e2e8f0" opacity="0.5" />
+    <polygon points="65,140 90,225 82,225 57,140" fill="#e2e8f0" opacity="0.5" />
+  </g>
+</svg>

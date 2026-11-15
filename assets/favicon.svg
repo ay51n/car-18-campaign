@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <linearGradient id="favShield" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e3a8a" />
+      <stop offset="100%" stop-color="#0a192f" />
+    </linearGradient>
+  </defs>
+  <path d="M 32 3 Q 48 3 58 12 Q 61 38 32 61 Q 3 38 6 12 Q 16 3 32 3 Z" fill="url(#favShield)" stroke="#facc15" stroke-width="2.5" />
+  <text x="32" y="32" font-family="'Impact', sans-serif" font-weight="900" font-size="18" fill="#ffffff" text-anchor="middle">18</text>
+  <text x="32" y="44" font-family="'Montserrat', sans-serif" font-weight="800" font-size="7" fill="#facc15" text-anchor="middle" letter-spacing="1">CAR</text>
+  <circle cx="32" cy="14" r="2" fill="#facc15" />
+  <circle cx="24" cy="16" r="1.5" fill="#facc15" />
+  <circle cx="40" cy="16" r="1.5" fill="#facc15" />
+</svg>

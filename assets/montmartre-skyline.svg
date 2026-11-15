@@ -1,0 +1,148 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 450" width="100%" height="100%">
+  <defs>
+    <linearGradient id="skyGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#050d1a" />
+      <stop offset="40%" stop-color="#0c1b33" />
+      <stop offset="75%" stop-color="#1e3a5f" />
+      <stop offset="92%" stop-color="#ea580c" />
+      <stop offset="100%" stop-color="#f59e0b" />
+    </linearGradient>
+    <linearGradient id="hillGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#0c192c" />
+      <stop offset="100%" stop-color="#050a12" />
+    </linearGradient>
+    <linearGradient id="basilicaGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#f8fafc" />
+      <stop offset="50%" stop-color="#cbd5e1" />
+      <stop offset="100%" stop-color="#475569" />
+    </linearGradient>
+    <radialGradient id="sunGlow" cx="50%" cy="85%" r="60%">
+      <stop offset="0%" stop-color="#fef08a" stop-opacity="0.9" />
+      <stop offset="40%" stop-color="#f97316" stop-opacity="0.5" />
+      <stop offset="80%" stop-color="#0c1b33" stop-opacity="0" />
+    </radialGradient>
+    <filter id="cityGlow" x="-10%" y="-10%" width="120%" height="120%">
+      <feGaussianBlur stdDeviation="4" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <!-- SKY BACKGROUND -->
+  <rect x="0" y="0" width="1200" height="450" fill="url(#skyGrad)" />
+  
+  <!-- HORIZON GLOW BEHIND HIGHWAY -->
+  <circle cx="600" cy="400" r="320" fill="url(#sunGlow)" />
+
+  <!-- TWINKLING STARS IN SKY -->
+  <g fill="#ffffff" opacity="0.8">
+    <circle cx="90" cy="45" r="1.5" />
+    <circle cx="160" cy="80" r="1.2" />
+    <circle cx="240" cy="35" r="2" />
+    <circle cx="310" cy="95" r="1" />
+    <circle cx="420" cy="50" r="1.5" />
+    <circle cx="530" cy="70" r="1.8" />
+    <circle cx="700" cy="40" r="1.5" />
+    <circle cx="790" cy="85" r="2.2" />
+    <circle cx="880" cy="30" r="1" />
+    <circle cx="980" cy="65" r="1.6" />
+    <circle cx="1090" cy="40" r="1.8" />
+    <circle cx="1140" cy="90" r="1.2" />
+  </g>
+
+  <!-- MONTMARTRE HILL (Right & Center-right) -->
+  <path d="M 300 450 Q 550 280 850 230 Q 1020 210 1200 240 L 1200 450 Z" fill="url(#hillGrad)" opacity="0.85" />
+
+  <!-- SACRÉ-CŒUR BASILICA (Illuminated in Paris 18e) -->
+  <g transform="translate(920, 105) scale(0.85)" filter="url(#cityGlow)">
+    <!-- Main Dome -->
+    <path d="M 60 70 Q 60 10 95 0 Q 130 10 130 70 Z" fill="url(#basilicaGrad)" />
+    <!-- Cross on top -->
+    <line x1="95" y1="-10" x2="95" y2="2" stroke="#fef08a" stroke-width="2.5" />
+    <line x1="89" y1="-5" x2="101" y2="-5" stroke="#fef08a" stroke-width="2" />
+    
+    <!-- Dome Windows -->
+    <rect x="75" y="45" width="6" height="15" rx="3" fill="#1e293b" />
+    <rect x="92" y="42" width="6" height="18" rx="3" fill="#1e293b" />
+    <rect x="109" y="45" width="6" height="15" rx="3" fill="#1e293b" />
+
+    <!-- Left Smaller Dome -->
+    <path d="M 30 90 Q 30 45 50 35 Q 70 45 70 90 Z" fill="url(#basilicaGrad)" />
+    <line x1="50" y1="28" x2="50" y2="35" stroke="#cbd5e1" stroke-width="1.8" />
+
+    <!-- Right Smaller Dome -->
+    <path d="M 120 90 Q 120 45 140 35 Q 160 45 160 90 Z" fill="url(#basilicaGrad)" />
+    <line x1="140" y1="28" x2="140" y2="35" stroke="#cbd5e1" stroke-width="1.8" />
+
+    <!-- Campanile (Belfry tower on the left) -->
+    <rect x="15" y="25" width="22" height="75" fill="url(#basilicaGrad)" />
+    <path d="M 15 25 L 26 5 L 37 25 Z" fill="url(#basilicaGrad)" />
+    <rect x="22" y="35" width="8" height="18" rx="4" fill="#0f172a" />
+
+    <!-- Grand Basilica Facade & Arches -->
+    <rect x="20" y="85" width="150" height="50" fill="#cbd5e1" />
+    <!-- Colonnade & Portico -->
+    <rect x="35" y="105" width="120" height="30" fill="#94a3b8" />
+    <circle cx="55" cy="118" r="8" fill="#1e293b" />
+    <circle cx="95" cy="115" r="10" fill="#1e293b" />
+    <circle cx="135" cy="118" r="8" fill="#1e293b" />
+  </g>
+
+  <!-- HAUSSMANNIAN BUILDINGS SILHOUETTE (Left & right streetscape) -->
+  <!-- Left Side Parisian Buildings -->
+  <path d="M 0 450 L 0 310 
+           L 40 310 L 40 290 L 70 290 L 70 315 
+           L 110 315 L 110 280 L 150 280 L 150 320 
+           L 200 320 L 200 300 L 250 300 L 250 330 
+           L 320 330 L 320 310 L 380 310 L 380 350 
+           L 450 350 L 450 380 L 0 450 Z" 
+        fill="#071224" />
+
+  <!-- Building Windows with warm interior yellow light -->
+  <g fill="#fef08a" opacity="0.6">
+    <rect x="15" y="325" width="6" height="8" />
+    <rect x="28" y="325" width="6" height="8" />
+    <rect x="80" y="305" width="6" height="8" />
+    <rect x="95" y="305" width="6" height="8" />
+    <rect x="125" y="295" width="6" height="8" />
+    <rect x="165" y="335" width="6" height="8" />
+    <rect x="220" y="315" width="6" height="8" />
+    <rect x="235" y="315" width="6" height="8" />
+    <rect x="270" y="345" width="6" height="8" />
+  </g>
+
+  <!-- Right Side Parisian Buildings (Descending from Montmartre) -->
+  <path d="M 800 450 L 800 340 
+           L 840 340 L 840 320 L 890 320 L 890 350 
+           L 950 350 L 950 310 L 1010 310 L 1010 335 
+           L 1080 335 L 1080 295 L 1140 295 L 1140 325 
+           L 1200 325 L 1200 450 Z" 
+        fill="#071224" />
+
+  <g fill="#fef08a" opacity="0.6">
+    <rect x="815" y="355" width="6" height="8" />
+    <rect x="860" y="335" width="6" height="8" />
+    <rect x="970" y="325" width="6" height="8" />
+    <rect x="1030" y="345" width="6" height="8" />
+    <rect x="1100" y="310" width="6" height="8" />
+    <rect x="1160" y="340" width="6" height="8" />
+  </g>
+
+  <!-- HIGHWAY PERSPECTIVE (Boulevard / Avenue de Paris reaching horizon) -->
+  <polygon points="600,380 500,450 700,450" fill="#0f172a" />
+  <line x1="600" y1="380" x2="600" y2="450" stroke="#facc15" stroke-width="3" stroke-dasharray="8,6" />
+
+  <!-- STREET LIGHTS WITH WARM CONES -->
+  <g>
+    <!-- Left Street Light -->
+    <line x1="450" y1="410" x2="450" y2="365" stroke="#475569" stroke-width="2.5" />
+    <path d="M 445 365 Q 450 360 455 365" stroke="#475569" stroke-width="2.5" fill="none" />
+    <circle cx="450" cy="365" r="4" fill="#fef08a" />
+    <polygon points="450,365 425,430 475,430" fill="#fef08a" opacity="0.12" />
+
+    <!-- Right Street Light -->
+    <line x1="750" y1="410" x2="750" y2="365" stroke="#475569" stroke-width="2.5" />
+    <path d="M 745 365 Q 750 360 755 365" stroke="#475569" stroke-width="2.5" fill="none" />
+    <circle cx="750" cy="365" r="4" fill="#fef08a" />
+    <polygon points="750,365 725,430 775,430" fill="#fef08a" opacity="0.12" />
+  </g>
+</svg>

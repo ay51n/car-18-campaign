@@ -1,0 +1,182 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 320" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bodyGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" />
+      <stop offset="60%" stop-color="#f1f5f9" />
+      <stop offset="100%" stop-color="#cbd5e1" />
+    </linearGradient>
+    <linearGradient id="glassGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1e293b" />
+      <stop offset="50%" stop-color="#0f172a" />
+      <stop offset="100%" stop-color="#020617" />
+    </linearGradient>
+    <linearGradient id="tireGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#334155" />
+      <stop offset="50%" stop-color="#1e293b" />
+      <stop offset="100%" stop-color="#090d16" />
+    </linearGradient>
+    <linearGradient id="wheelRim" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f8fafc" />
+      <stop offset="50%" stop-color="#94a3b8" />
+      <stop offset="100%" stop-color="#475569" />
+    </linearGradient>
+    <filter id="carShadow" x="-10%" y="-10%" width="120%" height="150%">
+      <feGaussianBlur stdDeviation="8" result="blur" />
+      <feColorMatrix type="matrix" values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.45 0" />
+    </filter>
+    <linearGradient id="beamGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#fef08a" stop-opacity="0.8" />
+      <stop offset="100%" stop-color="#fef08a" stop-opacity="0" />
+    </linearGradient>
+  </defs>
+
+  <!-- GROUND SHADOW -->
+  <ellipse cx="300" cy="275" rx="260" ry="18" fill="#020617" filter="url(#carShadow)" />
+  <ellipse cx="300" cy="275" rx="230" ry="10" fill="#050b14" opacity="0.8" />
+
+  <!-- HEADLIGHT BEAM GLOW (Left side pointing forward) -->
+  <polygon points="50,225 0,210 0,265 65,245" fill="url(#beamGrad)" opacity="0.3" />
+
+  <!-- MAIN CAR BODY SHAPE -->
+  <g id="carGroup">
+    <!-- AUTO-ÉCOLE ROOF LIGHT BOX -->
+    <g transform="translate(230, 68)">
+      <!-- Light Base -->
+      <rect x="0" y="24" width="140" height="6" rx="2" fill="#0f172a" />
+      <!-- Light Sign White Box -->
+      <rect x="10" y="4" width="120" height="22" rx="4" fill="#ffffff" stroke="#e2e8f0" stroke-width="2" />
+      <!-- Inner subtle glow -->
+      <rect x="12" y="6" width="116" height="18" rx="3" fill="#fef08a" opacity="0.25" />
+      <!-- Blue Strip & Text -->
+      <text x="70" y="19" font-family="'Montserrat', 'Arial Black', sans-serif" font-weight="900" font-size="12" fill="#1e3a8a" text-anchor="middle" letter-spacing="2">
+        AUTO-ÉCOLE
+      </text>
+      <!-- Small orange safety light tips -->
+      <rect x="6" y="9" width="4" height="12" rx="1.5" fill="#f59e0b" />
+      <rect x="130" y="9" width="4" height="12" rx="1.5" fill="#f59e0b" />
+    </g>
+
+    <!-- ROOF & CABIN PILLARS -->
+    <!-- Window glass shape -->
+    <path d="M 160 185 L 210 102 L 390 102 L 470 185 Z" fill="url(#glassGrad)" stroke="#334155" stroke-width="2" />
+    
+    <!-- Windshield reflection highlight -->
+    <path d="M 215 108 L 180 180 L 235 180 L 255 108 Z" fill="#ffffff" opacity="0.12" />
+    <path d="M 330 108 L 305 180 L 320 180 L 340 108 Z" fill="#ffffff" opacity="0.08" />
+
+    <!-- Driver & Passenger Silhouettes -->
+    <circle cx="270" cy="142" r="14" fill="#090d16" />
+    <path d="M 252 185 C 252 165 288 165 288 185 Z" fill="#090d16" />
+    <!-- Student Driver with cap/glasses -->
+    <circle cx="340" cy="140" r="14" fill="#090d16" />
+    <path d="M 322 185 C 322 163 358 163 358 185 Z" fill="#090d16" />
+    <!-- Rear-view mirror -->
+    <rect x="290" y="112" width="22" height="7" rx="2" fill="#334155" />
+
+    <!-- B-Pillar divider -->
+    <rect x="302" y="102" width="10" height="83" fill="#0f172a" />
+
+    <!-- CAR MAIN CHASSIS / LOWER BODY -->
+    <path d="M 55 235 
+             C 50 220 58 195 90 190 
+             L 165 185 
+             L 215 98 
+             L 405 98 
+             L 485 185 
+             L 535 195 
+             C 555 205 560 225 550 240 
+             C 545 248 535 252 510 252 
+             C 505 220 455 220 450 252 
+             L 205 252 
+             C 200 220 150 220 145 252 
+             L 70 252 
+             C 55 252 52 242 55 235 Z" 
+          fill="url(#bodyGrad)" stroke="#cbd5e1" stroke-width="2" />
+
+    <!-- Front Bumper, Headlight, Grille -->
+    <!-- Front Headlight (Left) -->
+    <path d="M 55 205 C 75 205 95 215 95 228 C 75 230 60 225 55 205 Z" fill="#fef08a" stroke="#e2e8f0" stroke-width="1.5" />
+    <path d="M 60 210 Q 75 212 85 222" stroke="#38bdf8" stroke-width="2" fill="none" />
+
+    <!-- Rear Taillight (Right) -->
+    <path d="M 545 210 C 535 212 528 222 530 232 C 545 230 552 225 545 210 Z" fill="#ef4444" stroke="#dc2626" stroke-width="1" />
+
+    <!-- Front Grille & Fog Light -->
+    <rect x="58" y="235" width="25" height="12" rx="3" fill="#1e293b" />
+    <circle cx="70" cy="241" r="3" fill="#f8fafc" />
+
+    <!-- CAR 18 OFFICIAL LOGO DECAL ON FRONT DOOR -->
+    <g transform="translate(210, 190) scale(0.68)">
+      <!-- Shield Decal -->
+      <path d="M 30 5 Q 45 5 55 12 Q 57 35 30 55 Q 3 35 5 12 Q 15 5 30 5 Z" fill="#0a192f" stroke="#ffffff" stroke-width="2" />
+      <text x="30" y="24" font-family="'Impact', sans-serif" font-weight="900" font-size="14" fill="#ffffff" text-anchor="middle">CAR 18</text>
+      <text x="30" y="32" font-family="'Montserrat', sans-serif" font-weight="800" font-size="4.2" fill="#fbbf24" text-anchor="middle" letter-spacing="0.5">AUTO MOTO ÉCOLE</text>
+      <!-- Small highway perspective -->
+      <polygon points="30,35 24,50 36,50" fill="#1e3a8a" />
+      <line x1="30" y1="36" x2="30" y2="48" stroke="#facc15" stroke-width="1" stroke-dasharray="1.5,1.5" />
+    </g>
+
+    <!-- Side Door Lines & Handles -->
+    <path d="M 205 185 L 205 245" stroke="#94a3b8" stroke-width="1.5" />
+    <path d="M 345 185 L 345 245" stroke="#94a3b8" stroke-width="1.5" />
+    <!-- Door handles -->
+    <rect x="220" y="195" width="20" height="4" rx="2" fill="#64748b" />
+    <rect x="360" y="195" width="20" height="4" rx="2" fill="#64748b" />
+
+    <!-- Side Mirror -->
+    <path d="M 195 182 C 185 182 180 188 185 194 C 192 195 200 190 198 182 Z" fill="#0f172a" />
+    <ellipse cx="188" cy="188" rx="4" ry="2.5" fill="#38bdf8" opacity="0.6" />
+
+    <!-- Body dynamic racing accent stripe (Blue & Yellow) -->
+    <path d="M 105 240 L 440 240 L 445 244 L 110 244 Z" fill="#2563eb" />
+    <path d="M 112 245 L 438 245 L 440 247 L 114 247 Z" fill="#facc15" />
+
+    <!-- PARIS LICENSE PLATE (Front/Side angle) -->
+    <g transform="translate(75, 238)">
+      <rect x="0" y="0" width="38" height="10" rx="1.5" fill="#ffffff" stroke="#000000" stroke-width="0.8" />
+      <rect x="0" y="0" width="5" height="10" fill="#1d4ed8" />
+      <text x="2.5" y="7" font-family="sans-serif" font-weight="900" font-size="4" fill="#ffffff" text-anchor="middle">F</text>
+      <text x="20" y="7.5" font-family="'Courier New', monospace" font-weight="900" font-size="5.5" fill="#000000" text-anchor="middle" letter-spacing="0.5">CAR-18-P</text>
+      <rect x="33" y="0" width="5" height="10" fill="#1d4ed8" />
+      <text x="35.5" y="7" font-family="sans-serif" font-weight="900" font-size="4" fill="#ffffff" text-anchor="middle">75</text>
+    </g>
+
+    <!-- WHEEL 1 (Front - Left) -->
+    <g transform="translate(175, 252)">
+      <!-- Tire -->
+      <circle cx="0" cy="0" r="38" fill="url(#tireGrad)" />
+      <circle cx="0" cy="0" r="32" fill="#0f172a" />
+      <circle cx="0" cy="0" r="24" fill="url(#wheelRim)" />
+      <!-- Rim spokes -->
+      <circle cx="0" cy="0" r="7" fill="#0f172a" />
+      <circle cx="0" cy="0" r="3" fill="#cbd5e1" />
+      <!-- 5-Spoke Sport Design -->
+      <path d="M 0 -22 L 3 -7 L -3 -7 Z" fill="#0f172a" />
+      <path d="M 21 -7 L 7 -1 L 5 -6 Z" fill="#0f172a" />
+      <path d="M 13 18 L 3 6 L 6 3 Z" fill="#0f172a" />
+      <path d="M -13 18 L -6 3 L -3 6 Z" fill="#0f172a" />
+      <path d="M -21 -7 L -5 -6 L -7 -1 Z" fill="#0f172a" />
+      <!-- Brake Disc & Red Brembo-style caliper -->
+      <path d="M -18 -8 Q -16 -18 -6 -20" stroke="#ef4444" stroke-width="4.5" fill="none" stroke-linecap="round" />
+    </g>
+
+    <!-- WHEEL 2 (Rear - Right) -->
+    <g transform="translate(478, 252)">
+      <!-- Tire -->
+      <circle cx="0" cy="0" r="38" fill="url(#tireGrad)" />
+      <circle cx="0" cy="0" r="32" fill="#0f172a" />
+      <circle cx="0" cy="0" r="24" fill="url(#wheelRim)" />
+      <!-- Rim spokes -->
+      <circle cx="0" cy="0" r="7" fill="#0f172a" />
+      <circle cx="0" cy="0" r="3" fill="#cbd5e1" />
+      <!-- 5-Spoke Sport Design -->
+      <path d="M 0 -22 L 3 -7 L -3 -7 Z" fill="#0f172a" />
+      <path d="M 21 -7 L 7 -1 L 5 -6 Z" fill="#0f172a" />
+      <path d="M 13 18 L 3 6 L 6 3 Z" fill="#0f172a" />
+      <path d="M -13 18 L -6 3 L -3 6 Z" fill="#0f172a" />
+      <path d="M -21 -7 L -5 -6 L -7 -1 Z" fill="#0f172a" />
+      <!-- Brake Caliper -->
+      <path d="M -18 -8 Q -16 -18 -6 -20" stroke="#ef4444" stroke-width="4.5" fill="none" stroke-linecap="round" />
+    </g>
+  </g>
+</svg>

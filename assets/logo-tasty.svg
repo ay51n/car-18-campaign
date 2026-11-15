@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 100" width="100%" height="100%">
+  <defs>
+    <!-- Tasty Crousty Neon Pink Gradient -->
+    <linearGradient id="tastyPink" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ff70a6" />
+      <stop offset="40%" stop-color="#ff1493" />
+      <stop offset="100%" stop-color="#d90368" />
+    </linearGradient>
+    <linearGradient id="croustyYellow" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#fffbeb" />
+      <stop offset="50%" stop-color="#fef08a" />
+      <stop offset="100%" stop-color="#f59e0b" />
+    </linearGradient>
+    <!-- Drop Shadow Filter -->
+    <filter id="shadow" x="-10%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="3" dy="4" stdDeviation="2" flood-color="#020617" flood-opacity="0.8" />
+    </filter>
+  </defs>
+
+  <g filter="url(#shadow)">
+    <!-- Palm trees behind "Tasty" -->
+    <g transform="translate(105, 12) scale(0.65)" stroke="#090d16" stroke-width="2">
+      <!-- Left Palm Trunk -->
+      <path d="M 15 50 Q 18 30 25 15" fill="none" stroke="#22c55e" stroke-width="4" stroke-linecap="round" />
+      <!-- Palm Leaves -->
+      <path d="M 25 15 Q 10 5 0 15 Q 15 15 25 15 Q 20 0 30 -5 Q 30 10 25 15 Q 40 5 45 20 Q 33 18 25 15" fill="#10b981" />
+      <!-- Right Palm Trunk & Fronds -->
+      <path d="M 28 50 Q 32 32 42 18" fill="none" stroke="#22c55e" stroke-width="3" stroke-linecap="round" />
+      <path d="M 42 18 Q 30 8 22 18 Q 33 18 42 18 Q 45 2 52 0 Q 48 12 42 18 Q 58 10 65 22 Q 52 20 42 18" fill="#34d399" />
+    </g>
+
+    <!-- Word: "Tasty" in cursive italic neon script with thick white/dark border -->
+    <g transform="translate(15, 42) rotate(-6)">
+      <!-- Black Outline -->
+      <text x="0" y="0" font-family="'Brush Script MT', 'Pacifico', 'Caveat', 'Segoe Script', cursive, sans-serif" font-weight="900" font-style="italic" font-size="46" fill="#020617" stroke="#020617" stroke-width="9" stroke-linejoin="round" letter-spacing="1">
+        Tasty
+      </text>
+      <!-- White Stroke -->
+      <text x="0" y="0" font-family="'Brush Script MT', 'Pacifico', 'Caveat', 'Segoe Script', cursive, sans-serif" font-weight="900" font-style="italic" font-size="46" fill="#ffffff" stroke="#ffffff" stroke-width="4" stroke-linejoin="round" letter-spacing="1">
+        Tasty
+      </text>
+      <!-- Pink Fill -->
+      <text x="0" y="0" font-family="'Brush Script MT', 'Pacifico', 'Caveat', 'Segoe Script', cursive, sans-serif" font-weight="900" font-style="italic" font-size="46" fill="url(#tastyPink)" letter-spacing="1">
+        Tasty
+      </text>
+    </g>
+
+    <!-- Word: "CROUSTY" in bold block 3D letters -->
+    <g transform="translate(125, 60)">
+      <!-- 3D Shadow -->
+      <text x="4" y="24" font-family="'Impact', 'Arial Black', sans-serif" font-weight="900" font-size="44" fill="#020617" letter-spacing="2">
+        CROUSTY
+      </text>
+      <!-- White Border -->
+      <text x="0" y="20" font-family="'Impact', 'Arial Black', sans-serif" font-weight="900" font-size="44" fill="#ffffff" stroke="#ffffff" stroke-width="6" stroke-linejoin="round" letter-spacing="2">
+        CROUSTY
+      </text>
+      <!-- Crisp Gradient Fill -->
+      <text x="0" y="20" font-family="'Impact', 'Arial Black', sans-serif" font-weight="900" font-size="44" fill="#ffffff" letter-spacing="2">
+        CROUSTY
+      </text>
+    </g>
+
+    <!-- Small subtitle banner: PARIS 18 STREET FOOD -->
+    <rect x="135" y="85" width="165" height="13" rx="3" fill="#ff1493" opacity="0.9" />
+    <text x="217" y="94.5" font-family="'Montserrat', sans-serif" font-weight="800" font-size="7.5" fill="#ffffff" text-anchor="middle" letter-spacing="1.5">
+      CRISPY CHICKEN • PARIS 18
+    </text>
+  </g>
+</svg>
